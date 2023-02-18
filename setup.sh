@@ -9,7 +9,7 @@ apt dist-upgrade
 
 adduser --disabled-password --gecos "" "$username"
 echo "${username}:${username}" | chpasswd
-gpasswd -a "$" sudo
+gpasswd -a "$username" sudo
 
 cp ~/.bashrc /home/${username}/.bashrc
 cp ~/.profile /home/${username}/.profile
